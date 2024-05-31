@@ -1,0 +1,62 @@
+.art {
+    margin-top    : 0px;
+    align-items   : center;
+    display       : flex;
+    flex-direction: column;
+}
+
+.art ul {
+    list-style: none;
+    padding   : 0;
+}
+
+.art li {
+    margin-bottom: 20px;
+}
+
+.art a {
+    text-decoration: none;
+
+    display: block;
+}
+
+.art a:hover {
+    text-decoration: underline;
+}
+
+.art img {
+    display      : block;
+    margin-top   : 50px;
+    border-radius: 20px;
+
+
+}
+
+.art p {
+    word-break: break-all;
+    max-width : 950px;
+    color     : #252525;
+    font-size : 23px;
+
+}
+
+.art h1 {
+    font-size: 35px;
+    color    : #252525;
+    max-width: 950px;
+}
+
+.art h3 {
+    font-size  : 20px;
+    color      : #252525;
+    max-width  : 700px;
+    margin-left: 700px;
+}
+
+.art h4 {
+
+    max-width: 950px;
+    color    : #252525;
+    font-size: 30px;
+
+}
