@@ -44,13 +44,14 @@ const Sidenav = () => {
     return <div className="loading">Loading...</div>;
   }
 
-const redirectToAnotherPage = (article) => {
-  router.push({
-    pathname: "/another",
-    query: { article: JSON.stringify(article) }
-  });
-};
 
+  const redirectToAnotherPage = (article, event) => {
+    event.preventDefault(); 
+    router.push({
+      pathname: "/another",
+      query: { article: JSON.stringify(article) },
+    });
+  };
 
   return (
     <div className="part2">
@@ -77,7 +78,7 @@ const redirectToAnotherPage = (article) => {
             <li key={index}>
               <a
                 href={article.url}
-                onClick={() => redirectToAnotherPage(article)}
+                onClick={(event) => redirectToAnotherPage(article, event)}
               >
                 {article.urlToImage && (
                   <img
@@ -88,7 +89,6 @@ const redirectToAnotherPage = (article) => {
                   />
                 )}
                 <h5>{article.title}</h5>
-               
               </a>
             </li>
           ))}
